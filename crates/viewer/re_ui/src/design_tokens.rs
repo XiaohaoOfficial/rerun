@@ -391,7 +391,7 @@ impl DesignTokens {
         font_definitions.font_data.insert(
             "Inter-Medium".into(),
             std::sync::Arc::new(egui::FontData::from_static(include_bytes!(
-                "../data/Inter-Medium.otf"
+                "../data/Inter-Medium.ttf"
             ))),
         );
         font_definitions

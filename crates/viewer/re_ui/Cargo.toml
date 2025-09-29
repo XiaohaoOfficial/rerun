@@ -47,7 +47,7 @@ egui_commonmark = { workspace = true, features = ["pulldown_cmark"] }
 egui_extras.workspace = true
 egui_tiles.workspace = true
 egui.workspace = true
-getrandom.workspace = true
+getrandom = { workspace = true, features = ["wasm_js"] }
 itertools.workspace = true
 jiff.workspace = true
 num-traits.workspace = true
