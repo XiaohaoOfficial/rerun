@@ -390,9 +390,7 @@ impl DesignTokens {
         let mut font_definitions = egui::FontDefinitions::default();
         font_definitions.font_data.insert(
             "Inter-Medium".into(),
-            std::sync::Arc::new(egui::FontData::from_static(include_bytes!(
-                "../data/Inter-Medium.ttf"
-            ))),
+            std::sync::Arc::new(egui::FontData::from_owned(vec![])),
         );
         font_definitions
             .families
