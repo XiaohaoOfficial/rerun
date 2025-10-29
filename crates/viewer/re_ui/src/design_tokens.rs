@@ -388,13 +388,14 @@ impl DesignTokens {
         assert_eq!(self.typography.fontFamily, "Inter");
         assert_eq!(self.typography.fontWeight, "Medium");
         let mut font_definitions = egui::FontDefinitions::default();
+
         font_definitions.font_data.insert(
             "Inter-Medium".into(),
-            std::sync::Arc::new(egui::FontData::from_static(include_bytes!(
-                "../data/Inter-Medium.otf"
-            ))),
+            std::sync::Arc::new(
+                egui::FontData::from_owned(vec![])
+               )),
         );
-        font_definitions
+        font_definitionss
             .families
             .get_mut(&egui::FontFamily::Proportional)
             .unwrap()
